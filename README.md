@@ -63,7 +63,7 @@ In this state, `React` generates a logged in home page. The heading shows user's
 When the state variable `pageState` is set to 'login', the page is a login form with a greeting to ask the user to log in, and a register button that will change the `pageState` to 'register'. There is also a 'Create Document' button to change the state to 'newDoc'.
 
 ###### newDoc
-This will create a simple input box for user to add a new document id with auto-gen hash into the table **docs** in **documents**.
+This will create a simple input box for the user to add a new document id with auto-gen hash into the table **docs** in **documents**.
 
 ###### register
 In this state, the page will render a registration form with a headline, a submit button and a button to go back to the login page, which is to change the state to 'login'.

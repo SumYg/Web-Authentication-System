@@ -53,7 +53,7 @@ In this app, only FetchAPI is used for the `React` app to send and receive a mes
 ### Authentication
 In the `React` client side, the state variable `pageState` is initialized to null in the constructor since we can't know whether the user is already authenticated or not at the time when the `React` components mount. Therefore, after all the components are mounted, which means in the function `componentDidMount()`, `checkLoginStatus()` is called and it will fetch the server with the path `/check` to ask the server to check whether the session variable `loggedIn` has already set to be true. (If the variable is null, it means that the session is newly created, else if the variable is false, the user had logged out before). The response from the server in this path is in JSON format. The value of the key `loginStatus` is true when the user has logged in which means the session variable `loggedIn` is set to true, and the user's id and username are also stored in the JSON.
 
-When the `React` app receives the message that the user had already logged in, its state variables `pageState`, `id` and `username` would be set to 'logout', the user's id in the database and the user's name registered in the database. Otherwise, the user hasn't logged in and the `pageState` is set to be 'login'.
+When the `React` app receives the message that the user had already logged in, its state variables `pageState`, `id` and `username` would be set to 'logout', the user's id and the name registered in the database respectively. Otherwise, the user hasn't logged in and the `pageState` is set to be 'login'.
 
 ##### `pageState`
 ###### logout

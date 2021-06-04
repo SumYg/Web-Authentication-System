@@ -5,7 +5,7 @@ This system uses `MariaDB`, `Node.js` and `React` to implement an authentication
 Create two databases called **users** and **documents** and then use the SQL commands in the corresponding .txt files to create the tables.
 ### Run `Node.js` and `React`
 #### Node.js
-First, create a directory and open a console in the directory, then initialize a new `Node.JS` app by:
+First, create a directory and open a console in the directory, then initialize a new `Node.js` app by:
 ```ssh
 npm init
 ```

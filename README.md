@@ -78,7 +78,7 @@ After checking for duplicates in the server during registration, the app will ha
 ##### Login checking
 The function `compare` in the `bcrypt` library is used for checking if the password inputted by the user is correct.
 ### Routing
-Besides the home page which is in the path `/`, there is also a document page in the path `/document/xxxxxx` for showing some specialized contents. The state of this page is 'logout', so there is a logout button. Besides, there is also 'Send Me Email' and 'Back to Home' button.
+Besides the home page which is in the path `/`, there is also a document page in the path `/document/xxxxxx` for showing some specialized contents. The state of this page is 'logout', so there is a logout button. Besides, there is also 'Send Me Email' and 'Back to Home' buttons.
 #### `/document`
 If the user navigates to this page, the heading will change to 'No document id in the url' since different documents are supposed to have some ids or hashes to index.
 

@@ -46,9 +46,9 @@ npm start
 
 ## Characteristics of this System
 ### Use of Session and Cookies
-Since when starting a new tab or browser window, a new `React` instance is created and the states of different instances are independent. Session and cookies are used in order to allow the sharing of data among different windows and tabs.
+Since when starting a new tab or browser window, a new `React` instance is created and the states of different instances are independent, session and cookies are used in order to allow the sharing of data among different windows and tabs.
 ### Communication between the Client and Server
-In this app, only FetchAPI is used for the `React` app to send and receive a message from the server. Since for each fetch, the server needs to retrieve the data stored for the session, `credentials: "include"` is set for all fetch.
+In this app, only FetchAPI is used for the `React` app to send and receive some messages from the server. Since for each fetch, the server needs to retrieve the data stored for the session, `credentials: "include"` is set for all fetch.
 
 ### Authentication
 In the `React` client side, the state variable `pageState` is initialized to null in the constructor since we can't know whether the user is already authenticated or not at the time when the `React` components mount. Therefore, after all the components are mounted, which means in the function `componentDidMount()`, `checkLoginStatus()` is called and it will fetch the server with the path `/check` to ask the server to check whether the session variable `loggedIn` has already set to be true. (If the variable is undefined, it means that the session is newly created, else if the variable is false, the user had logged out before). The response from the server in this path is in JSON format. The value of the key `loginStatus` is true when the user has logged in which means the session variable `loggedIn` is set to true, and the user's id and username are also stored in the JSON.

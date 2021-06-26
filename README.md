@@ -5,13 +5,9 @@ This system uses `MariaDB`, `Node.js` and `React` to implement an authentication
 Create two databases called **users** and **documents** and then use the SQL commands in the corresponding .txt files to create the tables.
 ### Run `Node.js` and `React`
 #### Node.js
-First, create a directory and open a console in the directory, then initialize a new `Node.js` app by:
+First, install the packages in the directory `NodeJS` by:
 ```ssh
-npm init
-```
-Put **email.js** and **index.js** in this repo into the directory and install the packages:
-```ssh
-npm i express mariadb express-session dotenv bcrypt
+npm i
 ```
 After that, create a file named **.env** to put some hidden value (Curly brackets and the string inside are to be replaced):
 ```
@@ -30,14 +26,12 @@ node index.js
 ```
 `Node.js` is now running on Port 8000.
 #### React
-You can first use *create-react-app* to create a new `React` app.
+First, run the following command in the directory `React`.
 ```ssh
-npx create-react-app {name of the app}
+npm i
 ```
-Then put **App.js** and **Document.js** into the **/src** directory and install the package:
-```ssh
-npm i react-router-dom
-```
+Then put **App.js** and **Document.js** into the **/src** directory.
+
 Run the app in the app's root directory:
 ```ssh
 npm start
